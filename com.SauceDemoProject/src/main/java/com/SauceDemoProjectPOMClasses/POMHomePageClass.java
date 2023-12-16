@@ -30,8 +30,12 @@ public class POMHomePageClass
      
     @FindBy(xpath="//span[@class='shopping_cart_badge']")
     private WebElement cardBadge;
+    
      @FindBy(xpath="//button[text()='Add to cart']")
      private List <WebElement> multipleProductIncard;
+     
+     @FindBy(xpath="//a[contains(@class,'shopping_cart_link')]")    //xpath by contains 
+     private WebElement cartlink;
      
      // Methods 
      public void clickMenu()
@@ -62,5 +66,9 @@ public class POMHomePageClass
     	 {
     		 multipleProductIncard.get(i).click();
     	 }
+     }
+     public void clickCart()
+     {
+    	 cartlink.click();
      }
 }

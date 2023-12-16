@@ -11,7 +11,7 @@ public class TC04AddMultipleProductInCardFunctionality extends SauceDemoBaseClas
        public void verifyAddMultipleProductInCardFunctionality() throws InterruptedException
        {
     	  POMHomePageClass hp = new POMHomePageClass(driver);
-    	  Thread.sleep(3000);
+    	  Thread.sleep(2000);
     	  hp.addMultipleProdct();
     	  
     	  // Check Validation
